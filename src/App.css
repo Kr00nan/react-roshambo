@@ -1,0 +1,56 @@
+* {
+  background-color: rgb(70, 102, 145);
+  font-family: sans-serif;
+  color: #fff;
+}
+
+body {
+  width: 40rem;
+  border: 2px solid rgb(51, 75, 106);
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.player-icon {
+  width: 12.5rem;
+  height: 12.5rem;
+  margin: 1.25rem;
+  border-radius: 25%;
+  background-color: #ddd;
+  text-align: center;
+  line-height: 12.5rem;
+  position: relative;
+  display: inline-block;
+  border: 2px solid #fff;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* mirrors image of second picture */
+.player-icon:nth-child(2) {
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+button {
+  width: 25rem;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 1.25rem auto;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  padding: 1rem;
+}
+
+button:hover {
+  background-color: rgb(77, 113, 160);
+  transition: all 200ms ease-out;
+}
+
+p {
+  text-align: center;
+  min-height: 3.75rem;
+}
